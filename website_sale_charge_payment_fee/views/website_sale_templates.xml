@@ -28,7 +28,7 @@
             </attribute>
         </xpath>
         <xpath expr="//span[hasclass('payment_option_name')]" position="after">
-            <t t-if="acq.charge_fee">
+            <t t-if="acq.charge_fee and website_sale_order">
                 <span>(Fee:
                     <t t-if="acq.charge_fee_type == 'fixed'">
                         <span
